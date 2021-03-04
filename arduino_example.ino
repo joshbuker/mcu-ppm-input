@@ -66,14 +66,10 @@ void loop()
 
 void write_ppm_to_serial()
 {
-  Serial.print("Start Frame: ");
   Serial.print(rx_channel_data[0]);
   Serial.print("\t");
   for (byte i = 1; i <= RX_CHANNEL_COUNT; i++)
   {
-    Serial.print("CH[");
-    Serial.print(i);
-    Serial.print("]: ");
     int parsed_output = constrain(rx_channel_data[i], 1000, 2000) - 1000;
     Serial.print(parsed_output);
     Serial.print("\t");
