@@ -4,6 +4,14 @@ I had quite a bit of trouble figuring out exactly how to read PPM signals from
 my radio receiver (the fs-ia6b), so I figured I'd share my solution to help
 anyone else who runs into similar trouble.
 
+## Code Examples
+
+Examples for the following MCUs have been implemented so far:
+
+* [Arduino](arduino_example.ino)
+* [Microbit](microbit_example.py) - Has some issues with interrupt timing, START_FRAME_LENGTH may need to be tuned
+* [Photon](photon_example.ino) - This example includes the RGBW example code mentioned below.
+
 ## Hardware Used
 
 ![](images/hardware_used.png)
